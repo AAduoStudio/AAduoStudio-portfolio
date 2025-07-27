@@ -5,117 +5,59 @@
   <title>AAduoStudio | WordPress Developer</title>
   <style>
     body {
-      font-family: 'Times New Roman', Times, serif;
+      font-family: "Times New Roman", Times, serif;
       margin: 0;
-      padding: 0;
-      background-color: #121212;
-      color: #f0f0f0;
-    }
-
-    a {
-      color: #80cbc4;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: #26a69a;
+      background: #f9f9f9;
     }
 
     header {
-      background-color: #1e1e1e;
-      color: #ffffff;
+      background: #333;
+      color: white;
       text-align: center;
-      padding: 3rem 1rem;
-      border-bottom: 1px solid #333;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-      color: #b2dfdb;
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #26a69a;
-      margin-top: 2rem;
-      font-size: 1.8rem;
-    }
-
-    ul {
-      margin-top: 0.5rem;
-      padding-left: 1.5rem;
-    }
-
-    ul li {
-      margin-bottom: 0.4rem;
-    }
-
-    .contact p {
-      margin: 0.5rem 0;
+      padding: 20px;
     }
 
     .projects {
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-
-    .projects h2 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      color: #26a69a;
+      padding: 20px;
     }
 
     .project {
-      max-width: 700px;
-      margin: 2rem auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-      overflow: hidden;
-      background-color: #1e1e1e;
-      text-align: left;
-      position: relative;
+      background: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
     }
 
     .project img {
       width: 100%;
-      height: auto;
+      max-width: 400px;
       display: block;
+      margin-bottom: 10px;
     }
 
-    .project h3 {
-      margin: 1rem;
-      color: #80cbc4;
-    }
-
-    .project p {
-      margin: 0 1rem 1rem;
-      color: #cccccc;
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
     }
 
     .preview-button {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #80cbc4;
       color: white;
-      font-size: 1.5rem;
-      padding: 15px 30px;
-      border: none;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 15px;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
       cursor: pointer;
-      border-radius: 5px;
-      z-index: 2;
+    }
+
+    .preview-button:hover {
+      background-color: #26a69a;
     }
 
     .project-video {
@@ -123,65 +65,13 @@
       width: 100%;
       height: auto;
     }
-
-    footer {
-      background-color: #1e1e1e;
-      color: #999;
-      text-align: center;
-      padding: 1.5rem;
-      margin-top: 3rem;
-      border-top: 1px solid #333;
-    }
   </style>
 </head>
 <body>
-
   <header>
     <h1>AAduoStudio</h1>
     <p>WordPress | Elementor | WooCommerce</p>
   </header>
-
-  <!-- About Section -->
-  <section>
-    <h2>About Us</h2>
-    <p>At <strong>AAduoStudio</strong>, we specialize in crafting modern, responsive, and high-performance WordPress websites tailored to businesses and individuals. From custom design to full e-commerce solutions, we deliver websites that are visually engaging, functional, and easy to manage.</p>
-    <p>With a passion for clean code and stunning UI, we bring your brand’s vision to life through intuitive layouts and smart functionality.</p>
-
-    <h2>Skills & Technologies</h2>
-    <ul>
-      <li>WordPress CMS</li>
-      <li>Elementor Page Builder</li>
-      <li>WooCommerce Store Setup</li>
-      <li>HTML, CSS, JavaScript</li>
-      <li>Responsive Design</li>
-      <li>Theme & Plugin Customization</li>
-      <li>Website Speed Optimization</li>
-      <li>On-Page SEO Setup</li>
-    </ul>
-
-    <h2>Services Offered</h2>
-    <ul>
-      <li>Custom WordPress Website Design</li>
-      <li>WooCommerce Store Development</li>
-      <li>Landing Page Creation</li>
-      <li>Theme Installation & Configuration</li>
-      <li>Bug Fixes & Website Maintenance</li>
-      <li>Website Speed & Mobile Optimization</li>
-      <li>Redesign Existing WordPress Sites</li>
-      <li>Custom Elementor Layouts</li>
-    </ul>
-
-    <h2>Get in Touch</h2>
-    <div class="contact">
-      <p><strong>Email:</strong> aaduostudio@gmail.com</p>
-      <p><strong>WhatsApp:</strong> +92-324-2969266</p>
-      <p><strong>Fiverr:</strong> <a href="https://www.fiverr.com/aaduostudio" target="_blank">@aaduostudio</a></p>
-      <p><strong>Upwork:</strong> AA Duo Studio</p>
-      <p><strong>Location:</strong> Karachi, Pakistan</p>
-    </div>
-
-    <p><em>Let’s turn your ideas into a live, stunning WordPress website!</em></p>
-  </section>
 
   <!-- Projects Section -->
   <section class="projects">
@@ -194,7 +84,7 @@
       <p>Created using Elementor Free. Fully responsive and includes a custom navigation menu, image gallery, and modern UI.</p>
       <button class="preview-button" onclick="playVideo('project1')">Preview Website Demo</button>
       <video id="project1" class="project-video">
-        <source src="path-to-your-video/video1.mp4" type="video/mp4">
+        <source src="videos/video1.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -206,7 +96,7 @@
       <p>Built using WordPress. Features a contact form, embedded map, course timetable, and smooth scrolling layout.</p>
       <button class="preview-button" onclick="playVideo('project2')">Preview Website Demo</button>
       <video id="project2" class="project-video">
-        <source src="path-to-your-video/video2.mp4" type="video/mp4">
+        <source src="videos/video2.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -218,11 +108,10 @@
       <p>This bakery website was crafted with WordPress and Elementor, focusing on a warm and inviting design. It includes a hero image with call-to-action, smooth navigation, sectioned layout for menu and services, and a custom "Order Now" button to drive conversions.</p>
       <button class="preview-button" onclick="playVideo('project3')">Preview Website Demo</button>
       <video id="project3" class="project-video">
-        <source src="path-to-your-video/video3.mp4" type="video/mp4">
+        <source src="videos/video3.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
-
   </section>
 
   <footer>
@@ -233,7 +122,7 @@
     function playVideo(projectId) {
       const video = document.getElementById(projectId);
       const allVideos = document.querySelectorAll('.project-video');
-      
+
       // Pause and hide all videos
       allVideos.forEach(v => {
         v.pause();
