@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AAduoStudio | WordPress Developer</title>
+  <title>AAduoStudio | WordPress Developer Portfolio</title>
   <style>
     body {
       font-family: "Times New Roman", Times, serif;
       margin: 0;
-      background: #f9f9f9;
+      background: #121212;
+      color: #f9f9f9;
     }
 
     header {
@@ -22,7 +23,7 @@
     }
 
     .project {
-      background: white;
+      background: #1e1e1e;
       padding: 15px;
       margin-bottom: 20px;
       border-radius: 10px;
@@ -34,13 +35,6 @@
       max-width: 400px;
       display: block;
       margin-bottom: 10px;
-    }
-
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
     }
 
     .preview-button {
@@ -64,6 +58,36 @@
       display: none;
       width: 100%;
       height: auto;
+      border: 2px solid #80cbc4; /* Dark border with accent color */
+      border-radius: 8px;
+      background-color: #333;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .contact-info, .about-info, .services-info {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    .contact-info p, .about-info p, .services-info ul {
+      color: #ccc;
+    }
+
+    .services-info ul {
+      padding-left: 20px;
+    }
+
+    .services-info li {
+      margin-bottom: 5px;
     }
   </style>
 </head>
@@ -72,6 +96,43 @@
     <h1>AAduoStudio</h1>
     <p>WordPress | Elementor | WooCommerce</p>
   </header>
+
+  <!-- About Us Section -->
+  <section class="about-info">
+    <h2>About Us</h2>
+    <p>At <strong>AAduoStudio</strong>, we specialize in crafting modern, responsive, and high-performance WordPress websites tailored to businesses and individuals. From custom design to full e-commerce solutions, we deliver websites that are visually engaging, functional, and easy to manage.</p>
+    <p>With a passion for clean code and stunning UI, we bring your brand’s vision to life through intuitive layouts and smart functionality.</p>
+  </section>
+
+  <!-- Skills & Technologies Section -->
+  <section class="services-info">
+    <h2>Skills & Technologies</h2>
+    <ul>
+      <li>WordPress CMS</li>
+      <li>Elementor Page Builder</li>
+      <li>WooCommerce Store Setup</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Responsive Design</li>
+      <li>Theme & Plugin Customization</li>
+      <li>Website Speed Optimization</li>
+      <li>On-Page SEO Setup</li>
+    </ul>
+  </section>
+
+  <!-- Services Offered Section -->
+  <section class="services-info">
+    <h2>Services Offered</h2>
+    <ul>
+      <li>Custom WordPress Website Design</li>
+      <li>WooCommerce Store Development</li>
+      <li>Landing Page Creation</li>
+      <li>Theme Installation & Configuration</li>
+      <li>Bug Fixes & Website Maintenance</li>
+      <li>Website Speed & Mobile Optimization</li>
+      <li>Redesign Existing WordPress Sites</li>
+      <li>Custom Elementor Layouts</li>
+    </ul>
+  </section>
 
   <!-- Projects Section -->
   <section class="projects">
@@ -96,7 +157,7 @@
       <p>Built using WordPress. Features a contact form, embedded map, course timetable, and smooth scrolling layout.</p>
       <button class="preview-button" onclick="playVideo('project2')">Preview Website Demo</button>
       <video id="project2" class="project-video">
-        <source src="video2.mp4" type="video/mp4">
+        <source src="video02.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -108,10 +169,20 @@
       <p>This bakery website was crafted with WordPress and Elementor, focusing on a warm and inviting design. It includes a hero image with call-to-action, smooth navigation, sectioned layout for menu and services, and a custom "Order Now" button to drive conversions.</p>
       <button class="preview-button" onclick="playVideo('project3')">Preview Website Demo</button>
       <video id="project3" class="project-video">
-        <source src="video3.mp4" type="video/mp4">
+        <source src="video03.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-info">
+    <h2>Get in Touch</h2>
+    <p><strong>Email:</strong> <a href="mailto:aaduostudio@gmail.com">aaduostudio@gmail.com</a></p>
+    <p><strong>WhatsApp:</strong> <a href="tel:+923242969266">+92-324-2969266</a></p>
+    <p><strong>Fiverr:</strong> <a href="https://www.fiverr.com/aaduostudio" target="_blank">AAduoStudio on Fiverr</a></p>
+    <p><strong>Upwork:</strong> <a href="https://www.upwork.com/freelancers/~01a93fa0a8d5b0e00d" target="_blank">AAduoStudio on Upwork</a></p>
+    <p><strong>Location:</strong> Karachi, Pakistan</p>
   </section>
 
   <footer>
