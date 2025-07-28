@@ -143,4 +143,89 @@
 
   <!-- Services Offered Section -->
   <section class="services-info">
-    <h2>Servic
+    <h2>Services Offered</h2>
+    <ul>
+      <li>Custom WordPress Website Design</li>
+      <li>WooCommerce Store Development</li>
+      <li>Landing Page Creation</li>
+      <li>Theme Installation & Configuration</li>
+      <li>Bug Fixes & Website Maintenance</li>
+      <li>Website Speed & Mobile Optimization</li>
+      <li>Redesign Existing WordPress Sites</li>
+      <li>Custom Elementor Layouts</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <h2>My Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="project">
+      <img src="Web01-01.jpeg" alt="Kitchen Website">
+      <h3>Kitchen Website</h3>
+      <p>Created using Elementor Free. Fully responsive and includes a custom navigation menu, image gallery, and modern UI.</p>
+      <button class="preview-button" onclick="playVideo('project1')">Preview Website Demo</button>
+      <video id="project1" class="project-video">
+        <source src="video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project">
+      <img src="Web02-01.jpeg" alt="Digital Marketing Website">
+      <h3>Digital Marketing Website</h3>
+      <p>Built using WordPress. Features a contact form, embedded map, course timetable, and smooth scrolling layout.</p>
+      <button class="preview-button" onclick="playVideo('project2')">Preview Website Demo</button>
+      <video id="project2" class="project-video">
+        <source src="video02.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project">
+      <img src="Web03-01.jpeg" alt="Bakery Website">
+      <h3>Bakery WordPress Website</h3>
+      <p>This bakery website was crafted with WordPress and Elementor, focusing on a warm and inviting design. It includes a hero image with call-to-action, smooth navigation, sectioned layout for menu and services, and a custom "Order Now" button to drive conversions.</p>
+      <button class="preview-button" onclick="playVideo('project3')">Preview Website Demo</button>
+      <video id="project3" class="project-video">
+        <source src="video03.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-info">
+    <h2>Get in Touch</h2>
+    <p><strong>Email:</strong> <a href="mailto:aaduostudio@gmail.com">aaduostudio@gmail.com</a></p>
+    <p><strong>WhatsApp:</strong> <a href="tel:+923242969266">+92-324-2969266</a></p>
+    <p><strong>Fiverr:</strong> <a href="https://www.fiverr.com/aaduostudio" target="_blank">AAduoStudio on Fiverr</a></p>
+    <p><strong>Upwork:</strong> <a href="https://www.upwork.com/freelancers/~01a93fa0a8d5b0e00d" target="_blank">AAduoStudio on Upwork</a></p>
+    <p><strong>Location:</strong> Karachi, Pakistan</p>
+  </section>
+
+  <footer>
+    <p>© 2025 AAduoStudio — All rights reserved</p>
+  </footer>
+
+  <script>
+    function playVideo(projectId) {
+      const video = document.getElementById(projectId);
+      const allVideos = document.querySelectorAll('.project-video');
+
+      // Pause and hide all videos
+      allVideos.forEach(v => {
+        v.pause();
+        v.style.display = 'none';
+      });
+
+      // Play the clicked video
+      video.style.display = 'block';
+      video.play();
+    }
+  </script>
+</body>
+</html>
